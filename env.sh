@@ -1,3 +1,4 @@
+export PATH=ncbi-blast-2.2.31+-src/c++/ReleaseMT/bin/blastp:$PATH
 curl -L https://cpanmin.us | perl - App::cpanminus
  
  
