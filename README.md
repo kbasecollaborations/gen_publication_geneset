@@ -4,15 +4,17 @@
 
 sh evn.sh <br><br>
 
-## 2. grep protein file name from files.xml <br>
+## 2. grep protein and info file name using species name from files.xml <br>
+grep -e "Acoerulea.*annotation_info.txt" files.xml <br>
 grep -e "Acoerulea.*protein.fa.gz" files.xml <br> <br>
+
 
 ## 3. download protein and info file from phytozome <br>
 perl download.pl Acoerulea_322_v3.1.protein.fa.gz <br>
 perl download.pl Acomosus_321_v3.annotation_info.txt <br><br>
 
 ## 4. create species name folder <br>
-mkidr Acoerulea_322_v3.1 <br><br>
+mkdir Acoerulea_322_v3.1 <br><br>
 
 ## 5. copy protein file, run_blast_slurm.sh, run_paperblast_pipeline.py and faSplit into species folder <br>
 cp Acoerulea_322_v3.1.protein.fa.gz Acoerulea_322_v3.1 <br>
