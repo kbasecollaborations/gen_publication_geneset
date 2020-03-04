@@ -17,8 +17,7 @@ perl $parse_blast  $species.blast.txt $ANNOTFILE  > $species.blast.txt.tmp
 
 echo "running paperblast"
 
-
-/lustre/or-hydra/cades-bsd/4pz/paperblastrun/paperblast_final.cgi  $species.blast.txt.tmp > $species.blast.txt.tmp.json
+perl $parseblastcgi  $species.blast.txt.tmp > $species.blast.txt.tmp.json
 
 echo "paperblast finished"
 
