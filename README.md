@@ -21,7 +21,7 @@ cp faSplit Acoerulea_322_v3.1 <br><br>
 python run_paperblast_pipeline.py Acoerulea_322_v3.1.protein.fa.gz <br><br>
 
 ## 6. run blast <br>
-sbash run_blast_slurm.sh <br><br>
+sbatch run_blast_slurm.sh <br><br>
 
 ## 7. Generate publication gmt file <br>
-run_paperblast.sh Acomosus_321_v3.annotation_info.txt <br><br>
+sh run_paperblast.sh Acomosus_321_v3.annotation_info.txt <br><br>
