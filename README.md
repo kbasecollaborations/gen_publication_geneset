@@ -1,27 +1,27 @@
 # gen_publication_geneset
 
 
-##1. grep protein file name from files.xml
-grep -e "Acoerulea.*protein.fa.gz" files.xml
+## 1. grep protein file name from files.xml <br>
+grep -e "Acoerulea.*protein.fa.gz" files.xml <br> <br>
 
-##2. download protein and info file from phytozome
-perl download.pl Acoerulea_322_v3.1.protein.fa.gz
-perl download.pl Acomosus_321_v3.annotation_info.txt
+## 2. download protein and info file from phytozome <br>
+perl download.pl Acoerulea_322_v3.1.protein.fa.gz <br>
+perl download.pl Acomosus_321_v3.annotation_info.txt <br><br>
 
-##3. create species name folder 
-mkidr Acoerulea_322_v3.1
+## 3. create species name folder <br>
+mkidr Acoerulea_322_v3.1 <br><br>
 
-##4. copy protein file, run_blast_slurm.sh, run_paperblast_pipeline.py and faSplit into species folder
-cp Acoerulea_322_v3.1.protein.fa.gz Acoerulea_322_v3.1
-cp run_blast_slurm.sh Acoerulea_322_v3.1
-cp run_paperblast_pipeline.py Acoerulea_322_v3.1
-cp faSplit Acoerulea_322_v3.1
+## 4. copy protein file, run_blast_slurm.sh, run_paperblast_pipeline.py and faSplit into species folder <br>
+cp Acoerulea_322_v3.1.protein.fa.gz Acoerulea_322_v3.1 <br>
+cp run_blast_slurm.sh Acoerulea_322_v3.1 <br>
+cp run_paperblast_pipeline.py Acoerulea_322_v3.1 <br>
+cp faSplit Acoerulea_322_v3.1 <br><br>
 
-##5. split protein file 
-python run_paperblast_pipeline.py Acoerulea_322_v3.1.protein.fa.gz
+## 5. split protein file <br>
+python run_paperblast_pipeline.py Acoerulea_322_v3.1.protein.fa.gz <br><br>
 
-##6. run blast 
-sbash run_blast_slurm.sh 
+## 6. run blast <br>
+sbash run_blast_slurm.sh <br><br>
 
-##7. Generate publication gmt file
-run_paperblast.sh Acomosus_321_v3.annotation_info.txt
+## 7. Generate publication gmt file <br>
+run_paperblast.sh Acomosus_321_v3.annotation_info.txt <br><br>
