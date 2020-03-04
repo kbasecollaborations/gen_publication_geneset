@@ -1,7 +1,7 @@
 
-parseblastcgi=/lustre/or-hydra/cades-bsd/4pz/paperblastrun/paperblast_final.cgi
-parse_blast=/lustre/or-hydra/cades-bsd/4pz/paperblastrun/parse_blast.pl
-parse_blast_hits=/lustre/or-hydra/cades-bsd/4pz/paperblastrun/parse_blasthits.py
+parseblastcgi=code/paperblast_final.cgi
+parse_blast=code/parse_blast.pl
+parse_blast_hits=code/parse_blasthits.py
 
 
 #Will change for every species
