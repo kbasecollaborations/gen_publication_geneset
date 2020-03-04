@@ -1,5 +1,8 @@
 # gen_publication_geneset
 
+## Set Environment Variables <br>
+
+sh evn.sh <br><br>
 
 ## 1. grep protein file name from files.xml <br>
 grep -e "Acoerulea.*protein.fa.gz" files.xml <br> <br>
