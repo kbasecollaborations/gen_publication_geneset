@@ -1,4 +1,4 @@
-curl ‘https://signon.jgi.doe.gov/signon/create’ --data-urlencode ‘login=USER_NAME’ --data-urlencode ‘password=USER_PASSWORD’ -c cookies > /dev/null
+curl 'https://signon.jgi.doe.gov/signon/create' --data-urlencode 'login=USER_NAME' --data-urlencode 'password=USER_PASSWORD' -c cookies > /dev/null
 export PATH=ncbi-blast-2.2.31+-src/c++/ReleaseMT/bin/blastp:$PATH
 curl -L https://cpanmin.us | perl - App::cpanminus
  
