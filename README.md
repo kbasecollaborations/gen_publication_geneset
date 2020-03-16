@@ -17,7 +17,11 @@ perl download.pl Acomosus_321_v3.annotation_info.txt <br><br>
 mkdir Acoerulea_322_v3.1 <br><br>
 
 ## 5. copy protein file, run_blast_slurm.sh, run_paperblast_pipeline.py and faSplit into species folder <br>
-ls -l *annotation_info.txt | sed -e "s/.annotation_info.txt//g" | awk '{print "mkdir "$9"\n cp run_blast_slurm.sh "$9"\ncp run_paperblast_pipeline.py "$9"\ncp faSplit "$9}' | sh
+ ls -l *annotation_info.txt | sed -e "s/.annotation_info.txt//g" | awk '{print "mkdir "$9"\ncp run_blast_slurm.sh "$9"\ncp run_paperblast_pipeline.py "$9"\ncp faSplit "$9"\ncp "$9".protein.fa.gz " $9 }' |sh
+ 
+cp: cannot stat ‘Lusitatissimum_200_v1.0.protein.fa.gz’: No such file or directory
+cp: cannot stat ‘MpusillaRCC299_229_v3.0.protein.fa.gz’: No such file or directory
+
 
 cp Acoerulea_322_v3.1.protein.fa.gz Acoerulea_322_v3.1 <br>
 cp run_blast_slurm.sh Acoerulea_322_v3.1 <br>
